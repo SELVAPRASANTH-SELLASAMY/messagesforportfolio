@@ -1,6 +1,6 @@
 header{
-  width: 98%;
-  margin: .5rem 1%;
+  width: 95%;
+  margin: .5rem 2.5%;
   border-radius: .25rem;
   background-color: #006266;
   color: white;
@@ -17,9 +17,9 @@ header{
 footer .message{
   background-color: white;
   border-radius: .25rem;
-  width: 98%;
+  width: 95%;
   min-width: 410px;
-  margin: 1rem 1%;
+  margin: 1rem 2.5%;
   padding: 1rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 1rem;
@@ -65,6 +65,10 @@ footer .label{
 @keyframes spin{
   0%{transform: rotate(0deg);}
   100%{transform: rotate(360deg);}
+}
+.message-container{
+  width: fit-content;
+  margin-left: .2rem;
 }
 
 @media screen and (max-width:425px){
