@@ -33,7 +33,7 @@ function App() {
               <div id='p' className="Name"><div className="label">Name</div> : {obj.Name}</div>
               <div id='p' className="phoneNumber"><div className="label">Phone Number</div> : {obj.phoneNumber}</div>
               <div id='p' className="email"><div className="label">Email</div> : <a href={'https://mail.google.com/mail/u/0/#inbox?compose='+obj.email}>{obj.email}</a></div>
-              <div id='p' className="Message"><div className="label">Message</div> : <div className="message-container">{obj.Message}</div></div>
+              <div id='p' className="Message"><div className="label">Message</div> <div className="message-container">{obj.Message}</div></div>
               <div id='p' className="received"><div className="label">Received at</div> : {obj.createdAt}</div>
               <div id='p' className="edited"><div className="label">Edited at</div> : {obj.updatedAt}</div>
             </div>
