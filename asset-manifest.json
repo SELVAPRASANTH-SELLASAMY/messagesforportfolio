@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/SELVAPRASANTH-SELLASAMY/messagesforportfolio/static/css/main.faf53325.css",
-    "main.js": "/SELVAPRASANTH-SELLASAMY/messagesforportfolio/static/js/main.69f612b5.js",
-    "index.html": "/SELVAPRASANTH-SELLASAMY/messagesforportfolio/index.html",
-    "main.faf53325.css.map": "/SELVAPRASANTH-SELLASAMY/messagesforportfolio/static/css/main.faf53325.css.map",
-    "main.69f612b5.js.map": "/SELVAPRASANTH-SELLASAMY/messagesforportfolio/static/js/main.69f612b5.js.map"
+    "main.css": "/messagesforportfolio/static/css/main.faf53325.css",
+    "main.js": "/messagesforportfolio/static/js/main.69f612b5.js",
+    "index.html": "/messagesforportfolio/index.html",
+    "main.faf53325.css.map": "/messagesforportfolio/static/css/main.faf53325.css.map",
+    "main.69f612b5.js.map": "/messagesforportfolio/static/js/main.69f612b5.js.map"
   },
   "entrypoints": [
     "static/css/main.faf53325.css",
