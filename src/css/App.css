@@ -1,0 +1,96 @@
+header{
+  width: 98%;
+  margin: .5rem 1%;
+  border-radius: .25rem;
+  background-color: #006266;
+  color: white;
+  text-shadow: 0 0 1rem rgb(0, 17, 255);
+  display: grid;
+  place-content: center;
+  letter-spacing: .1rem;
+  font-style: italic;
+  font-weight: 100;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+footer .message{
+  background-color: white;
+  border-radius: .25rem;
+  width: 98%;
+  min-width: 410px;
+  margin: 1rem 1%;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1rem;
+  text-overflow:ellipsis;
+}
+footer .message .Message{
+  text-overflow: clip;
+}
+footer #p{
+  display: flex;
+  margin: .5rem 0;
+}
+footer a{
+  margin-left: .25rem;
+  text-decoration: none;
+  color: #2e86de;
+}
+footer .label{
+  width: 8.5rem;
+  min-width: 8.5rem;
+}
+.loader{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+  background-color: rgba(6, 6, 6, 0.607);
+  min-width: 250px;
+}
+.loader .spin{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50px;
+  border: .2rem solid #004b4e;
+  border-bottom: .2rem solid rgba(255, 255, 255, 0.449);
+  border-left: .2rem solid rgba(255, 255, 255, 0.449);
+  border-right: .2rem solid rgba(255, 255, 255, 0.449);
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@media screen and (max-width:425px){
+  footer .message{
+    font-size: .8rem;
+    min-width: 365px;
+  }
+  header{
+    font-size: .85rem;
+  }
+  footer .label{
+    width: 6.5rem;
+    min-width: 6.5rem;
+  }
+}
+@media screen and (max-width:375px){
+  footer .message{
+    font-size: .5rem;
+    min-width: 245px;
+  }
+  header{
+    font-size: .55rem;
+    min-width: 245px;
+  }
+  footer .label{
+    width: 4.5rem;
+    min-width: 4.5rem;
+  }
+}
