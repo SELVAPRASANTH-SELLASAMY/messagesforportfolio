@@ -41,7 +41,9 @@ function App() {
         }
       </footer>
       <div ref={loader} className="loader">
-        <div className="spin"></div>
+        <svg>
+          <circle cx="25" cy="25" r="25"></circle>
+        </svg>
       </div>
     </div>
   );
