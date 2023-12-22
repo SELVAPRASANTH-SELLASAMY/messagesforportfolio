@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Helmet } from 'react-helmet';
 function App() {
   const loader = useRef();
+  const alert = useRef();
   const [fetchedDatas,setFetchedDatas] = useState([]);
   useEffect(()=>{
     loader.current.style.display='grid';
@@ -15,6 +16,7 @@ function App() {
     })
     .catch((error)=>{
       console.log(error)
+      alert.current.style.display = 'grid';
       loader.current.style.display='none';
     })
   },[])
@@ -44,6 +46,9 @@ function App() {
         <svg>
           <circle cx="20" cy="20" r="20"></circle>
         </svg>
+      </div>
+      <div ref={alert} id="alert" className="loader">
+        <div className="alert">Something went wrong! <br /> <span>Refresh and try again later.</span></div>
       </div>
     </div>
   );

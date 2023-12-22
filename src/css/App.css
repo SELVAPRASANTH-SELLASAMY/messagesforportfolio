@@ -65,15 +65,15 @@ footer .label{
   fill: none;
   stroke-width: 3.5;
   stroke: white;
-  stroke-dasharray: 160;
-  stroke-dashoffset: 160;
+  stroke-dasharray: 126;
+  stroke-dashoffset: 32;
   stroke-linecap:round;
   animation: animate 2s linear infinite;
 }
 @keyframes animate {
-  0%,100%{stroke-dashoffset: 160;}
+  0%,100%{stroke-dashoffset: 120;}
   50%{stroke-dashoffset: 0;}
-  50.1%{stroke-dashoffset: 320;}
+  50.1%{stroke-dashoffset: 235;}
 }
 @keyframes spin{
   0%{transform: rotate(0deg);}
@@ -109,6 +109,23 @@ footer .label{
   background-color: #006266;
   border-radius: 50px;
 }
+.alert{
+  font-size: 1rem;
+  border-radius: .5rem;
+  background-color: white;
+  font-weight: 500;
+  letter-spacing: .05rem;
+  color: red;
+  padding: 1.5rem 2.5rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#alert{
+  display: none;
+}
+#alert span{
+  font-size: .85rem;
+  text-align: center;
+}
 
 @media screen and (max-width:425px){
   footer .message{
@@ -124,6 +141,12 @@ footer .label{
   }
   .Message .label{
     font-size: 1.1rem;
+  }
+  .alert{
+    font-size: .8rem;
+  }
+  #alert span{
+    font-size: .65rem;
   }
 }
 @media screen and (max-width:375px){
@@ -141,5 +164,11 @@ footer .label{
   }
   .Message .label{
     font-size: .80rem;
+  }
+  .alert{
+    font-size: .85rem;
+  }
+  #alert span{
+    font-size: .65rem;
   }
 }
