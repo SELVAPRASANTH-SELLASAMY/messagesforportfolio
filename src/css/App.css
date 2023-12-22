@@ -54,17 +54,17 @@ footer .label{
 }
 .loader svg{
   display: flex;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   align-items: center;
   justify-content: center;
   animation: spin 2s linear infinite;
 }
 .loader svg circle{
-  transform: translate(2.5px,2.5px);
+  transform: translate(5px,5px);
   fill: none;
-  stroke-width: 5;
-  stroke: #ffffff;
+  stroke-width: 3.5;
+  stroke: white;
   stroke-dasharray: 160;
   stroke-dashoffset: 160;
   stroke-linecap:round;

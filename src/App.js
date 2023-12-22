@@ -42,7 +42,7 @@ function App() {
       </footer>
       <div ref={loader} className="loader">
         <svg>
-          <circle cx="25" cy="25" r="25"></circle>
+          <circle cx="20" cy="20" r="20"></circle>
         </svg>
       </div>
     </div>
