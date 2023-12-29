@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import './css/App.css';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
-function App() {
+function App({auth}) {
   const loader = useRef();
   const alert = useRef();
   const [fetchedDatas,setFetchedDatas] = useState([]);
   useEffect(()=>{
     loader.current.style.display='grid';
+    if(auth){
     axios.get("https://zany-gray-cricket-cap.cyclic.app/get")
     .then((res)=>{
       const response = res.data;
@@ -16,9 +17,19 @@ function App() {
     })
     .catch((error)=>{
       console.log(error)
+      alert.current.innerHTML = `<div class="alert">Something went wrong! <br /> <span>Refresh and try again later.</span></div>`
       alert.current.style.display = 'grid';
       loader.current.style.display='none';
-    })
+    })}
+    else{
+      alert.current.innerHTML = `<div class="alert">Authentication failed! <br /> <span>Try logging in again.</span></div>`
+      alert.current.style.display = 'grid';
+      loader.current.style.display='none';
+      setTimeout(()=>{
+        window.location.replace('/')
+      },3000)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   return (
     <div className="App">

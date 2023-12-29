@@ -1,0 +1,122 @@
+.Login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+form{
+    width: 30rem;
+    border-radius: .5rem;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    backdrop-filter: blur(25px);
+}
+.Login h1{
+    font-size: 2rem;
+    color: #006266;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    text-shadow: .15rem .15rem 0rem lightgrey;
+}
+.input{
+    height: auto;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.85rem;
+}
+input{
+    height: 3rem;
+    width: 25rem;
+    padding: 0 .65rem;
+    outline: none;
+    border: none;
+    border-bottom: .1rem solid lightgrey;
+    font-size: 1rem;
+    caret-color: #006266;
+    color: #006266;
+    background-color: white;
+}
+label{
+    position: absolute;
+    left: .5rem;
+    font-size: 1rem;
+    top: .75rem;
+    pointer-events: none;
+    transition: 500ms;
+    user-select: none;
+    color: #006266;
+}
+input:focus ~ label, input:valid ~ label{
+    top: -1rem;
+}
+input:focus ~ .line, input:valid ~ .line{
+    width: 25rem;
+}
+.line{
+    height: .1rem;
+    width: 0rem;
+    transition: 500ms;
+    border-radius: 50px;
+    align-self: center;
+    background-color: #006266;
+    position: absolute;
+    bottom: 0;
+}
+.warn{
+    color: red;
+    position: absolute;
+    bottom: -1.85rem;
+    right: .25rem;
+    visibility: hidden;
+}
+button{
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #006266;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+button:active{
+    transform: scale(1.025);
+}
+.response{
+    color: red;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    visibility: hidden;
+}
+@media screen and (max-width:500px) {
+    form{
+        width: 90vw;
+    }
+    input{
+        width: 80vw;
+    }
+    input:focus ~ .line, input:valid ~ .line{
+        width: 80vw;
+    }
+}
+@media screen and (max-width:425px){
+    input,label,button,.response,.warn{
+        font-size: .8rem;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+}
