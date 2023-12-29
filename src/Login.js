@@ -39,7 +39,7 @@ const Login = () =>{
             }
             else{
             // console.log(res.data.token)
-            setCookie("token",res.data.token,{path:'/',maxAge:'120'})
+            setCookie("token",res.data.token,{path:'/',maxAge:'3600'})
             window.location.replace('/message');
             res_msg.current.style.visibility = 'hidden';
             loader.current.style.display='none';
