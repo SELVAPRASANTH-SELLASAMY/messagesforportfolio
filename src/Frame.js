@@ -26,13 +26,13 @@ const Frame = () =>{
                 console.log(err)
             })
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
+    },[auth, cookie.token])
     if(auth){
         return(
             <App auth={auth}/>
         )
     }
+    else{
     return(
         <Router>
             <Routes>
@@ -41,5 +41,6 @@ const Frame = () =>{
             </Routes>
         </Router>
     )
+    }
 }
 export default Frame;
